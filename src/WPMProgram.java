@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class WPMProgram {
 
-    static String[] words = {"the ", "hello ", "french ", "potato ", "array ", "system ", "double ", "java ", "print ", "repo "};
+    static String[] words = {"the", "hello", "french", "potato", "array", "system", "double", "java", "print", "repo"};
     public static void main(String[] args) throws InterruptedException {
 
         out.println("3");
@@ -20,7 +20,7 @@ public class WPMProgram {
 
         Random rand = new Random();
         for (int i = 0; i<10; i++){
-            out.print(words[rand.nextInt(10)]);
+            out.print(words[rand.nextInt(9)] + " ");
         }
         out.println();
         double start =  LocalTime.now().toNanoOfDay();
